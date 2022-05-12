@@ -10,7 +10,7 @@ const Review = ({ review }) => {
                     <div className="flex items-center">
                         <div className="avatar">
                             <div className="w-16 mt-6 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 mr-5 ">
-                                <img src="https://api.lorem.space/image/face?hash=3174" />
+                                <img src={review.img} alt='' />
                             </div>
                         </div>
                         <div>
