@@ -26,7 +26,7 @@ const Testmonial = () => {
         },
     ]
     return (
-        <div className='px-12 my-20'>
+        <div className=' my-20'>
             <div className='flex justify-between'>
                 <div>
                     <h2 className='text-xl text-primary font-bold'>Testimonial</h2>

@@ -9,6 +9,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     const logout = () => {
         signOut(auth);
+        localStorage.removeItem('accessToken');
         navigate('/home')
     };
 
@@ -38,7 +39,7 @@ const Navbar = () => {
                     </div>
                     <a className="btn btn-ghost normal-case text-xl">Doctors Portal</a>
                 </div>
-                <div className="navbar-end hidden lg:flex">
+                <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
                         {
                             menuItems
