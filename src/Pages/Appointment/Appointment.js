@@ -5,6 +5,7 @@ import Footer from '../Shared/Footer/Footer';
 
 const Appointment = () => {
     const [date, setDate] = useState(new Date());
+    
     return (
         <div>
             <AppiontmentBanner date={date} setDate={setDate}></AppiontmentBanner>
