@@ -7,6 +7,7 @@ import Appointment from './Pages/Appointment/Appointment';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyAppointment from './Pages/Dashboard/MyAppointment';
 import MyReviews from './Pages/Dashboard/MyReviews';
+import Users from './Pages/Dashboard/Users';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Login/Register';
@@ -34,6 +35,7 @@ function App() {
         }>
           <Route index element={<MyAppointment></MyAppointment>}></Route>
           <Route path='review' element={<MyReviews></MyReviews>}></Route>
+          <Route path='users' element={<Users></Users>}></Route>
         </Route>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
