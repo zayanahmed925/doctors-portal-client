@@ -15,9 +15,9 @@ const Dashboard = () => {
                 <label for="dashboard-slider" class="drawer-overlay"></label>
                 <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
                     {/* <!-- Sidebar content here --> */}
-                    <li><Link to='/dashboard'>SidebarLink Item 1</Link></li>
-                    <li><Link to='/dashboard/review'>Sidebar Item 2</Link></li>
-                    <li><Link to='/dashboard/users'>Sidebar Item 2</Link></li>
+                    <li><Link to='/dashboard'>My Appointment</Link></li>
+                    <li><Link to='/dashboard/review'>My Reviews</Link></li>
+                    <li><Link to='/dashboard/users'>All Users</Link></li>
                 </ul>
 
             </div>
