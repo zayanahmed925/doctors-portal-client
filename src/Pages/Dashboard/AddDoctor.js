@@ -74,7 +74,6 @@ const AddDoctor = () => {
                                 value: true,
                                 message: 'Name is required'
                             }
-
                         })}
                     />
                     <label className="label">
