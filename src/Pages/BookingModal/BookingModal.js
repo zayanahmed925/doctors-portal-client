@@ -8,7 +8,7 @@ const BookingModal = ({ treatment, date, setTreatment, refetch }) => {
     const [user] = useAuthState(auth);
     const { name, slots, _id, price } = treatment;
     const formattedDate = format(date, 'PP');
-
+    // console.log(slots);
     const handleBooking = event => {
         event.preventDefault()
         const slot = event.target.slot.value;
@@ -59,7 +59,7 @@ const BookingModal = ({ treatment, date, setTreatment, refetch }) => {
                         <input type="text" disabled value={format(date, 'PP')} className="input input-bordered w-full max-w-xs" />
                         <select name='slot' className="select select-bordered w-full max-w-xs">
                             {
-                                slots.map((slot, index) => <option key={index} value={slot}>{slot}</option>)
+                                slots?.map((slot, index) => <option key={index} value={slot}>{slot}</option>)
                             }
                         </select>
                         <input type="text" name='name' disabled value={user?.displayName} className="input input-bordered w-full max-w-xs" />
