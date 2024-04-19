@@ -22,14 +22,14 @@ const DoctorRow = ({ doctor, index, refetch }) => {
     return (
         <tr>
             <th>{index + 1}</th>
-            <td><div class="avatar">
-                <div class="w-16 mask mask-squircle">
+            <td><div className="avatar">
+                <div className="w-16 mask mask-squircle">
                     <img src={img} alt={name} />
                 </div>
             </div></td>
             <td>{name}</td>
             <td>{specialty}</td>
-            <td><button onClick={() => handleDelete(email)} class="btn btn-xs btn-error">Delete</button></td>
+            <td><button onClick={() => handleDelete(email)} className="btn btn-xs btn-error">Delete</button></td>
         </tr>
     );
 };

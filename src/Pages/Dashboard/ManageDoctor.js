@@ -15,9 +15,9 @@ const ManageDoctor = () => {
     }
     return (
         <div>
-            <h2>Manage Doctor {doctors.length}</h2>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <h2>Manage Doctor {doctors?.length}</h2>
+            <div className="overflow-x-auto">
+                <table className="table w-full">
 
                     <thead>
                         <tr>
@@ -31,7 +31,7 @@ const ManageDoctor = () => {
                     <tbody>
 
                         {
-                            doctors.map((doctor, index) => <DoctorRow
+                            doctors?.map((doctor, index) => <DoctorRow
                                 key={doctor._id}
                                 doctor={doctor}
                                 index={index}
