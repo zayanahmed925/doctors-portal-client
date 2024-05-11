@@ -11,7 +11,7 @@ const AvailableService = ({ service, setTreatment }) => {
                     ? <span>{slots && slots[0]}</span>
                     : <span className='text-red-500'> No Slot Available </span>}</p>
                 <p>{slots?.length} {slots?.length < 1 ? 'Space' : 'Spaces'} Available</p>
-                <p>Price: ${price}</p>
+                {/* <p>Price: ${price}</p> */}
                 <div className="card-actions justify-center">
 
                     <label

@@ -139,7 +139,7 @@ const AddDoctor = () => {
                         {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
                     </label>
                 </div>
-                <input className='btn w-full max-w-xs' value='Add Doctor' type="submit" />
+                <input className='btn text-white w-full max-w-xs bg-gradient-to-r from-secondary to-primary' value='Add Doctor' type="submit" />
             </form>
         </div>
     );

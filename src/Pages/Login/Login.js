@@ -111,6 +111,7 @@ const Login = () => {
                         }
 
                         <input className='btn w-full max-w-xs' value='Login' type="submit" />
+
                     </form>
                     <p><small>New to Doctors Portal? <Link to='/register' className='text-primary'>Sign Up</Link></small></p>
                     <div className="divider">OR</div>

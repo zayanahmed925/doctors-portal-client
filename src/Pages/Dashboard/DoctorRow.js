@@ -13,7 +13,7 @@ const DoctorRow = ({ doctor, index, refetch }) => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 toast.success(`Doctor: ${name} successfully delete`)
                 refetch();
 

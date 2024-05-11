@@ -8,11 +8,11 @@ const BookingModal = ({ treatment, date, setTreatment, refetch }) => {
     const [user] = useAuthState(auth);
     const { name, slots, _id, price } = treatment;
     const formattedDate = format(date, 'PP');
-    // console.log(slots);
+    // console.log(treatment);
     const handleBooking = event => {
         event.preventDefault()
         const slot = event.target.slot.value;
-        console.log(slot);
+        // console.log(slot);
 
         const booking = {
             treatmentId: _id,

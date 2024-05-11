@@ -9,7 +9,7 @@ const AvailableAppointment = ({ date }) => {
     // console.log(date)
     // const [services, setServices] = useState([]);
     const [treatment, setTreatment] = useState('');
-    console.log(treatment);
+
     const formattedDate = format(date, 'PP')
 
     const { data: services, isLoading, error, refetch } = useQuery(['available', formattedDate], () =>
@@ -18,7 +18,7 @@ const AvailableAppointment = ({ date }) => {
 
             )
     )
-    // console.log(services);
+
     if (isLoading) {
         return <Loading></Loading>
     }

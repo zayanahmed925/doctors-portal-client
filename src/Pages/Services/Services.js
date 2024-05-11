@@ -1,26 +1,26 @@
 import React from 'react';
-import fluoride from '../../assets/images/fluoride.png';
-import cavity from '../../assets/images/cavity.png';
-import whitening from '../../assets/images/whitening.png';
+import fluoride from '../../assets/images/hospital (2).png';
+import cavity from '../../assets/images/medical-team.png';
+import whitening from '../../assets/images/medical-appointment.png';
 import Service from '../Service/Service';
 const Services = () => {
     const services = [
         {
             _id: 1,
-            name: 'Fluoride Treatment',
-            description: 'We provide best and quality full service service ',
+            name: 'Govt Hospital',
+            description: 'The most comfortable government hospital is where you can seek treatment ',
             img: fluoride
         },
         {
             _id: 2,
-            name: 'Cavity Filling',
-            description: 'We provide best and quality full service service ',
+            name: 'Specialist Doctor',
+            description: 'You have the freedom to select any doctor who specializes in the field you need',
             img: cavity
         },
         {
             _id: 3,
-            name: 'Teeth Whitening',
-            description: 'We provide best and quality full service service ',
+            name: 'Appointment Schedule ',
+            description: 'You can easily schedule an appointment on a date that suits you best',
             img: whitening
         }
     ]

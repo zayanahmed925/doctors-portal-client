@@ -8,20 +8,20 @@ const Testmonial = () => {
     const reviews = [
         {
             _id: 1,
-            name: 'Winson Herry',
-            location: 'Calfonia',
+            name: 'Rifat hossain',
+            location: 'dhaka',
             img: people1
         },
         {
             _id: 2,
-            name: 'Winson Herry',
-            location: 'Calfonia',
+            name: 'Shamima islam',
+            location: 'dhaka',
             img: people2
         },
         {
             _id: 3,
-            name: 'Winson Herry',
-            location: 'Calfonia',
+            name: 'Tushi akhter',
+            location: 'sylhet',
             img: people3
         },
     ]

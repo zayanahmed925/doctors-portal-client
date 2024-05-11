@@ -22,10 +22,10 @@ const ManageDoctor = () => {
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Avatar</th>
+                            <th>Profile</th>
                             <th>Name</th>
                             <th>Specialty</th>
-                            <th>Action</th>
+                            <th>Remove</th>
                         </tr>
                     </thead>
                     <tbody>

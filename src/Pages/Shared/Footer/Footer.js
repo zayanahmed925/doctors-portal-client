@@ -7,11 +7,11 @@ const Footer = () => {
                 background: `url(${footer})`,
                 backgroundSize: 'cover'
             }} className=" p-10">
-                <div className="footer ">
+                <div className="footer bg-teal-50 p-12">
                     <div>
                         <span className="footer-title">Services</span>
                         <a className="link link-hover">Branding</a>
-                        <a className="link link-hover">Design</a>
+
                         <a className="link link-hover">Marketing</a>
                         <a className="link link-hover">Advertisement</a>
                     </div>
@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
 
                 <div className='text-center my-12'>
-                    <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
+                    <p className='font-bold'>Copyright © 2022 - All right reserved by Doctor Portal</p>
                 </div>
 
             </footer>

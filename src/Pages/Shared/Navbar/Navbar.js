@@ -14,14 +14,14 @@ const Navbar = () => {
     };
 
     const menuItems = <>
-        <li><Link to='/home'>Home</Link></li>
-        <li><Link to='/appointment'>Appointment</Link></li>
-        <li><Link to='/reviews'>Reviews</Link></li>
-        <li><Link to='/contactUS'>Contact US</Link></li>
+        <li className='font-bold hover:bg-gradient-to-r from-secondary to-primary rounded-lg'><Link to='/home'>Home</Link></li>
+        <li className='font-bold hover:bg-gradient-to-r from-secondary to-primary rounded-lg'><Link to='/appointment'>Appointment</Link></li>
+        <li className='font-bold hover:bg-gradient-to-r from-secondary to-primary rounded-lg'><Link to='/reviews'>Reviews</Link></li>
+        <li className='font-bold hover:bg-gradient-to-r from-secondary to-primary rounded-lg'><Link to='/contactUS'>Contact US</Link></li>
         {
-            user && <li><Link to='/dashboard'>Dashboard</Link></li>
+            user && <li className='font-bold hover:bg-gradient-to-r from-secondary to-primary rounded-lg'><Link to='/dashboard'>Dashboard</Link></li>
         }
-        <li>{user ? <button className="btn btn-ghost" onClick={logout}>Sign Out</button> : <Link to='/login'>Login</Link>}</li>
+        <li>{user ? <button className="btn btn-ghost className='font-bold hover:bg-gradient-to-r from-bg-red-600 to-neutral rounded-lg'" onClick={logout}>Sign Out</button> : <Link to='/login'>Login</Link>}</li>
     </>
     return (
         <div>
@@ -37,7 +37,7 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">Doctors Portal</a>
+                    <a className="font-bold normal-case text-xl">Doctors Portal</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
