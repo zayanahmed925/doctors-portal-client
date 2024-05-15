@@ -1,0 +1,116 @@
+[
+    {
+        "_id": 2,
+        "name": "Dhaka Medical",
+        "Department": [
+            {
+                "Neurology": [
+                    {
+                        "doctor": {
+                            "name": "dhaka siddikhe neuro",
+                            "age": 35
+                        }
+                    },
+                    {
+                        "doctor": {
+                            "name": "dhaka saimur neuro",
+                            "age": 34
+                        }
+                    }
+                ]
+            },
+            {
+                "Dental": [
+                    {
+                        "doctor": {
+                            "name": "Pg siddikhe den",
+                            "age": 35
+                        }
+                    },
+                    {
+                        "doctor": {
+                            "name": "Pg saimur den",
+                            "age": 34
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": 2,
+        "name": "Pg Hospital",
+        "Department": [
+            {
+                "Neurology": [
+                    {
+                        "doctor": {
+                            "name": "Pg siddikhe neuro",
+                            "age": 35
+                        }
+                    },
+                    {
+                        "doctor": {
+                            "name": "Pg saimur neuro",
+                            "age": 34
+                        }
+                    }
+                ]
+            },
+            {
+                "Dental": [
+                    {
+                        "doctor": {
+                            "name": "Pg siddikhe den",
+                            "age": 35
+                        }
+                    },
+                    {
+                        "doctor": {
+                            "name": "Pg saimur den",
+                            "age": 34
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": 2,
+        "name": "Labaid Hospital",
+        "Department": [
+            {
+                "Neurology": [
+                    {
+                        "doctor": {
+                            "name": "lab siddikhe neuro",
+                            "age": 35
+                        }
+                    },
+                    {
+                        "doctor": {
+                            "name": "lab saimur neuro",
+                            "age": 34
+                        }
+                    }
+                ]
+            },
+            {
+                "Dental": [
+                    {
+                        "doctor": {
+                            "name": "lab siddikhe den",
+                            "age": 35
+                        }
+                    },
+                    {
+                        "doctor": {
+                            "name": "lab saimur den",
+                            "age": 34
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

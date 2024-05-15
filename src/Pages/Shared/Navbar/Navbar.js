@@ -16,6 +16,8 @@ const Navbar = () => {
     const menuItems = <>
         <li className='font-bold hover:bg-gradient-to-r from-secondary to-primary rounded-lg'><Link to='/home'>Home</Link></li>
         <li className='font-bold hover:bg-gradient-to-r from-secondary to-primary rounded-lg'><Link to='/appointment'>Appointment</Link></li>
+
+        <li className='font-bold hover:bg-gradient-to-r from-secondary to-primary rounded-lg'><Link to='/hospitalInfo'>Hospital Info</Link></li>
         <li className='font-bold hover:bg-gradient-to-r from-secondary to-primary rounded-lg'><Link to='/reviews'>Reviews</Link></li>
         <li className='font-bold hover:bg-gradient-to-r from-secondary to-primary rounded-lg'><Link to='/contactUS'>Contact US</Link></li>
         {

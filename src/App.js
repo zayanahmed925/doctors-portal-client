@@ -18,6 +18,7 @@ import RequireAdmin from './Pages/Login/RequireAdmin';
 import RequireAuth from './Pages/Login/RequireAuth';
 import Reviews from './Pages/Reviews/Reviews';
 import Navbar from './Pages/Shared/Navbar/Navbar';
+import HospitalInfo from './Pages/HospitalInfo/HospitalInfo';
 
 function App() {
   return (
@@ -38,7 +39,9 @@ function App() {
           </RequireAuth>
         }>
           <Route index element={<MyAppointment></MyAppointment>}></Route>
+
           <Route path='review' element={<MyReviews></MyReviews>}></Route>
+
           <Route path='payment/:id' element={<Payment></Payment>}></Route>
           <Route path='users' element={<RequireAdmin>
             <Users></Users>
@@ -50,6 +53,7 @@ function App() {
             <ManageDoctor></ManageDoctor>
           </RequireAdmin>}></Route>
         </Route>
+        <Route path='/hospitalInfo' element={<HospitalInfo></HospitalInfo>}></Route>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
