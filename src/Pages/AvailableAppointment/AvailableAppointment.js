@@ -19,6 +19,7 @@ const AvailableAppointment = ({ date }) => {
             )
     )
 
+    // console.log(services)
     if (isLoading) {
         return <Loading></Loading>
     }

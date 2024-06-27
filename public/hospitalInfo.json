@@ -1,20 +1,26 @@
 [
     {
-        "_id": 2,
+        "_id": 1,
         "name": "Dhaka Medical",
         "Department": [
             {
                 "Neurology": [
                     {
                         "doctor": {
-                            "name": "dhaka siddikhe neuro",
-                            "age": 35
+                            "name": "Dr rayhan",
+                            "age": 34
                         }
                     },
                     {
                         "doctor": {
-                            "name": "dhaka saimur neuro",
-                            "age": 34
+                            "name": "Dr Sabbir",
+                            "age": 33
+                        }
+                    },
+                    {
+                        "doctor": {
+                            "name": "Dr Sorif",
+                            "age": 32
                         }
                     }
                 ]
@@ -76,7 +82,7 @@
         ]
     },
     {
-        "_id": 2,
+        "_id": 3,
         "name": "Labaid Hospital",
         "Department": [
             {

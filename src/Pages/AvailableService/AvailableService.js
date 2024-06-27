@@ -2,7 +2,7 @@ import React from 'react';
 
 const AvailableService = ({ service, setTreatment }) => {
     const { name, slots, price } = service;
-    // console.log(service);
+    console.log(service);
     return (
         <div className="card w-96 bg-base-100 shadow-xl ">
             <div className="card-body text-center">

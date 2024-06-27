@@ -50,34 +50,30 @@ const HospitalInfo = () => {
                         ))}
                     </ul>
                 </details>
-                {selectedHospital && (
-                    <details className="dropdown">
-                        <summary className="m-1 btn">Department</summary>
-                        <ul className="p-2 shadow menu dropdown-content z-[1] bg-teal-400 rounded-box w-52">
-                            {hospitalDepartments.map(departmentName => (
-                                <li key={departmentName}>
-                                    <button onClick={() => handleDepartmentSelect(departmentName)}>
-                                        {departmentName}
-                                    </button>
-                                </li>
-                            ))}
-                        </ul>
-                    </details>
-                )}
-                {selectedDepartment && (
-                    <details className="dropdown">
-                        <summary className="m-1 btn">Doctor</summary>
-                        <ul className="p-2 shadow menu dropdown-content z-[1] bg-teal-600 rounded-box w-52">
-                            {departmentDoctors.map(doctor => (
-                                <li key={doctor.doctor.name}>
-                                    <button onClick={() => handleDoctorSelect(doctor.doctor.name)}>
-                                        {doctor.doctor.name}
-                                    </button>
-                                </li>
-                            ))}
-                        </ul>
-                    </details>
-                )}
+                <details className="dropdown" disabled={!selectedHospital}>
+                    <summary className="m-1 btn">Department</summary>
+                    <ul className="p-2 shadow menu dropdown-content z-[1] bg-teal-400 rounded-box w-52">
+                        {hospitalDepartments.map(departmentName => (
+                            <li key={departmentName}>
+                                <button onClick={() => handleDepartmentSelect(departmentName)}>
+                                    {departmentName}
+                                </button>
+                            </li>
+                        ))}
+                    </ul>
+                </details>
+                <details className="dropdown" disabled={!selectedDepartment}>
+                    <summary className="m-1 btn">Doctor</summary>
+                    <ul className="p-2 shadow menu dropdown-content z-[1] bg-teal-600 rounded-box w-52">
+                        {departmentDoctors.map(doctor => (
+                            <li key={doctor.doctor.name}>
+                                <button onClick={() => handleDoctorSelect(doctor.doctor.name)}>
+                                    {doctor.doctor.name}
+                                </button>
+                            </li>
+                        ))}
+                    </ul>
+                </details>
             </section>
             {selectedDoctor && (
                 <section>

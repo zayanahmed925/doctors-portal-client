@@ -46,8 +46,6 @@ const BookingModal = ({ treatment, date, setTreatment, refetch }) => {
     }
 
 
-
-
     return (
         <div>
             <input type="checkbox" id="booking-modal" className="modal-toggle" />

@@ -13,6 +13,7 @@ const Users = () => {
     if (isLoading) {
         return <Loading></Loading>
     }
+    console.log(users);
     return (
         <div>
             <h2>Users {users?.length}</h2>

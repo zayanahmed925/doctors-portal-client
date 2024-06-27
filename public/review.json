@@ -1,0 +1,26 @@
+[
+    {
+        "_id": 1,
+        "name": "Rifat hossain",
+        "location": "dhaka",
+        "img": "https://i.ibb.co/h94hL8G/people2.png",
+        "comments": "Your portal service are so amazing. and its so helpful.",
+        "reviewStar": "4"
+    },
+    {
+        "_id": 2,
+        "name": "Shamima islam",
+        "location": "dhaka",
+        "img": " https://i.ibb.co/89QjHcN/people3.png",
+        "comments": "Portal are very user friendly and it's easy for everyone use.",
+        "reviewStar": "5"
+    },
+    {
+        "_id": 3,
+        "name": "Tushi akhter",
+        "location": "sylhet",
+        "img": "https://i.ibb.co/G2MS6ry/pexels-italo-melo-881954-2379004.jpg",
+        "comments": "This portal are so helpful for online appointment booking system",
+        "reviewStar": "4.5"
+    }
+]
