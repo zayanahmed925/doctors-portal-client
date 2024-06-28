@@ -5,11 +5,13 @@ import Footer from '../Shared/Footer/Footer';
 
 const Appointment = () => {
     const [date, setDate] = useState(new Date());
-    
+
     return (
         <div>
             <AppiontmentBanner date={date} setDate={setDate}></AppiontmentBanner>
-            <AvailableAppointment date={date} setDate={setDate}></AvailableAppointment>
+            <div className='py-4'>
+                <AvailableAppointment date={date} setDate={setDate}></AvailableAppointment>
+            </div>
             <Footer></Footer>
         </div>
     );

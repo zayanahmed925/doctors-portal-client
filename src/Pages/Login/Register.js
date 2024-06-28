@@ -117,12 +117,9 @@ const Register = () => {
 
                             </label>
                         </div>
-
-
                         {
                             signInError
                         }
-
                         <input className='btn w-full max-w-xs' value='Sign Up' type="submit" />
                     </form>
                     <p><small>Already have an Account? <Link to='/login' className='text-primary'>Please Login</Link></small></p>

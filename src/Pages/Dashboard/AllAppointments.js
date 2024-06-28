@@ -4,14 +4,14 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
-const MyAppointment = () => {
+const AllAppointments = () => {
     const [appointments, setAppointments] = useState([]);
     const [user, loading, error] = useAuthState(auth);
 
     const navigate = useNavigate()
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/booking?patient=${user?.email}`, {
+            fetch(`http://localhost:5000/booking/all`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -31,7 +31,7 @@ const MyAppointment = () => {
     }, [user])
     return (
         <div>
-            <h2>My appointment History {appointments?.length}</h2>
+            <h2>All Appointment History {appointments?.length}</h2>
             <div className="overflow-x-auto">
                 <table className="table w-full">
                     {/* <!-- head --> */}
@@ -67,4 +67,4 @@ const MyAppointment = () => {
     );
 };
 
-export default MyAppointment;
+export default AllAppointments;

@@ -2,7 +2,7 @@ import React from 'react';
 import { toast } from 'react-toastify';
 
 const DoctorRow = ({ doctor, index, refetch }) => {
-    const { name, specialty, img, email } = doctor;
+    const { name, department, hospital, img, email } = doctor;
 
     const handleDelete = email => {
         fetch(`http://localhost:5000/doctor/${email}`, {
@@ -28,7 +28,8 @@ const DoctorRow = ({ doctor, index, refetch }) => {
                 </div>
             </div></td>
             <td>{name}</td>
-            <td>{specialty}</td>
+            <td>{hospital.name}</td>
+            <td>{department.name}</td>
             <td><button onClick={() => handleDelete(email)} className="btn btn-xs btn-error">Delete</button></td>
         </tr>
     );

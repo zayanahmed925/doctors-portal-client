@@ -19,8 +19,16 @@ import RequireAuth from './Pages/Login/RequireAuth';
 import Reviews from './Pages/Reviews/Reviews';
 import Navbar from './Pages/Shared/Navbar/Navbar';
 import HospitalInfo from './Pages/HospitalInfo/HospitalInfo';
+import Hospitals from './Pages/Dashboard/Hospitals';
+import Departments from './Pages/Dashboard/Departments';
+import { useState } from 'react';
+import AllAppointments from './Pages/Dashboard/AllAppointments';
 
 function App() {
+  // const [toggleModal, setToggleModal] = useState('')
+  // const toggleModal = () => {
+  //   setIsModalOpen(!isModalOpen);
+  // };
   return (
     <div className='px-12  max-auto'>
       <Navbar></Navbar>
@@ -35,17 +43,27 @@ function App() {
         }></Route>
         <Route path='/dashboard' element={
           <RequireAuth>
-            <Dashboard></Dashboard>
+            <Dashboard ></Dashboard>
           </RequireAuth>
         }>
           <Route index element={<MyAppointment></MyAppointment>}></Route>
+          <Route path='allAppointments' element={<AllAppointments />}></Route>
 
           <Route path='review' element={<MyReviews></MyReviews>}></Route>
 
           <Route path='payment/:id' element={<Payment></Payment>}></Route>
           <Route path='users' element={<RequireAdmin>
             <Users></Users>
-          </RequireAdmin>}></Route>
+          </RequireAdmin>}>
+          </Route>
+          <Route path='hospital' element={<RequireAdmin>
+            <Hospitals />
+          </RequireAdmin>}>
+          </Route>
+          <Route path='departments' element={<RequireAdmin>
+            <Departments />
+          </RequireAdmin>}>
+          </Route>
           <Route path='addDoctor' element={<RequireAdmin>
             <AddDoctor></AddDoctor>
           </RequireAdmin>}></Route>
